@@ -1,3 +1,3 @@
-config.js merge=ours
-config.js.enc merge=ours
-App.vue merge=ours
+config.js merge=theirs
+config.js.enc merge=theirs
+App.vue merge=theirs

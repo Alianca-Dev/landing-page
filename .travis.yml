@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- 12.16.3
+script:
+- npm run build
+install:
+- npm install --global yarn
+- npm install -g firebase-tools
+- npm install
+after_success:
+- firebase deploy --token "1//0horsRwFMdgzgCgYIARAAGBESNwF-L9Ir8FoCLHvcKgTZAgX6wF66AKvUn5f-VPcCLCtaxzvsKfKUoGjYj6u69L80uIP0EHpRgpU"
+  --project alianca-dev-277503
+before_install:
+- openssl aes-256-cbc -K $encrypted_1677f29b39bf_key -iv $encrypted_1677f29b39bf_iv
+  -in src/config.js.enc -out src/config.js -d

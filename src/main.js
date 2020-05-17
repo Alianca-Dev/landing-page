@@ -27,7 +27,7 @@ const routes = [
   { path: "/", name: "", component: Home },
   { path: "/home", name: "home", component: Home },
   { path: "/login", name: "login", component: Login },
-  { path: "/recover-password", name: "recover-passwor", component: RecoverPassword },
+  { path: "/recover-password", name: "recover-password", component: RecoverPassword },
   { path: "/register", name: "register", component: Register },
   { path: "/profile", name: "profile", component: Profile },
   { path: "/landing-profile", name: "landing-profile", component: LandingPagePerfilDEV },

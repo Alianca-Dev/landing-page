@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "aliancaprod",
+    "site": "aliancahomolog",
     "public": "dist",
     "ignore": [
       "firebase.json",

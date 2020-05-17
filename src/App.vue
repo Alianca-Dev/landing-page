@@ -2,6 +2,14 @@
 <div id="app">
   <body data-spy="scroll" data-target=".inner-link" data-offset="60">
     <main>
+      <div class="alert alert-info" role="alert">
+        <button class="close" type="button" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Hey!</strong> Essa é a versão de homologação do site. Para ir para a página de produção,
+        <a href="https://alianca.dev/">clique aqui</a>.
+      </div>
+
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>

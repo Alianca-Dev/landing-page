@@ -2,6 +2,7 @@
 <div id="app">
   <body data-spy="scroll" data-target=".inner-link" data-offset="60">
     <main>
+      <HomologBanner />
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
@@ -19,8 +20,12 @@
 }
 </style>
 <script>
+import HomologBanner from "./components/HomologBanner.vue";
+
 export default {
   name: "App",
-  components: {}
+  components: {
+    HomologBanner
+  }
 };
 </script>

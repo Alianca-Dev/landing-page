@@ -35,6 +35,11 @@
               </li>
               <li v-if="isLoggedIn">
                 <a>
+                  <router-link :to="'projects'">Projetos</router-link>
+                </a>
+              </li>
+              <li v-if="isLoggedIn">
+                <a>
                   <router-link :to="'logout'">Sair</router-link>
                 </a>
               </li>

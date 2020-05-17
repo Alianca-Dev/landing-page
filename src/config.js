@@ -1,3 +1,5 @@
+/* CREDENCIAIS DE HOMOLOGAÇÃO! AS CREDENCIAIS DE PRODUÇÃO SÃO SUBSTITUIDAS DURANTE A ROTINA DE DEPLOY */
+
 module.exports = {
     FIREBASE_API_KEY: "AIzaSyC8hOB3HQxwC-UwTm75njJFre_ee2fU1OQ",
     FIREBASE_AUTH_DOMAIN: "alianca-dev-homolog.firebaseapp.co",

@@ -1,2 +1,3 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+.travis.yml merge=ours

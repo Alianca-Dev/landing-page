@@ -136,7 +136,7 @@ export default {
         try {
           const user = await firebase.auth().createUserWithEmailAndPassword(this.email, this.password);
           console.log(user);
-          this.$router.push("perfil");
+          this.$router.push("landing-profile");
         } catch(error) {
           console.log(error);
         }

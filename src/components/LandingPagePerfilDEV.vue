@@ -23,14 +23,19 @@
                 id="description-text"
               >O PerfilDEV é uma funcionalidade da sua conta AliançaDEV. Se você ainda não tiver uma, basta se cadastrar no botão abaixo.</p>
             </div>
-            <router-link :to="'complement-data'">
-              <a
+            <!-- <router-link :to="'complement-data'"> -->
+            <!-- <a
                 href="#"
                 class="btn btn-primary"
                 v-if="isLoggedIn"
                 id="discord-button"
-              >CRIAR MEU PERFIL</a>
-            </router-link>
+            >CRIAR MEU PERFIL</a>-->
+            <div>
+              <div class="alert alert-info my-6" role="alert" v-if="isLoggedIn">
+                <strong>Ops!</strong> Ainda estamos finalizando essa funcionalidade. Pode deixar que avisaremos quando tudo estiver pronto ;)
+              </div>
+            </div>
+            <!-- </router-link> -->
             <router-link :to="'register'">
               <a
                 href="#"

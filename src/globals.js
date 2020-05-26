@@ -1,5 +1,4 @@
 import layoutHelpers from '@/layout/helpers.js'
-import themeSettings from '@/vendor/libs/theme-settings/theme-settings.js'
 
 export default function () {
   return {
@@ -8,9 +7,6 @@ export default function () {
 
     // Layout helpers
     layoutHelpers,
-
-    // Theme settings
-    themeSettings,
 
     // Check for RTL layout
     get isRtlMode () {
@@ -30,17 +26,17 @@ export default function () {
 
     // Layout navbar color
     get layoutNavbarBg () {
-      return this.themeSettings.getOption('navbarBg') || 'navbar-theme'
+      return 'navbar-theme'
     },
 
     // Layout sidenav color
     get layoutSidenavBg () {
-      return this.themeSettings.getOption('sidenavBg') || 'sidenav-theme'
+      return 'sidenav-theme'
     },
 
     // Layout footer color
     get layoutFooterBg () {
-      return this.themeSettings.getOption('footerBg') || 'footer-theme'
+      return 'footer-theme'
     },
 
     // Animate scrollTop

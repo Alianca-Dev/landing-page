@@ -1,6 +1,6 @@
-$enable-rtl-support: true;
-$enable-light-style: true;
-$enable-material-style: true;
+$enable-rtl-support: false;
+$enable-light-style: false;
+$enable-material-style: false;
 $enable-dark-style: true;
 
 @mixin feature-ltr($as-child: true) {

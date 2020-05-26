@@ -11,6 +11,12 @@
 </template>
 
 <style src="./style.scss" lang="scss"></style>
+<style src="@/vendor/styles/bootstrap-dark.scss" lang="scss"></style>
+<style src="@/vendor/styles/appwork-dark.scss" lang="scss"></style>
+<style src="@/vendor/styles/theme-corporate-dark.scss" lang="scss"></style>
+<style src="@/vendor/styles/colors-dark.scss" lang="scss"></style>
+<style src="@/vendor/styles/uikit.scss" lang="scss"></style>
+<style src="./style.scss" lang="scss"></style>
 
 <script>
 export default {

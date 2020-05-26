@@ -1,31 +1,27 @@
 <template>
-<div id="app">
-  <body data-spy="scroll" data-target=".inner-link" data-offset="60">
-    <main>
-      <HomologBanner />
-      <transition name="fade" mode="out-in">
-        <router-view></router-view>
-      </transition>
-    </main>
-  </body>
-</div>
+  <div id="app">
+    <notifications group="notifications-default" />
+    <notifications group="notifications-top-left" position="top left" />
+    <notifications group="notifications-top-center" position="top center" />
+    <notifications group="notifications-bottom-right" position="bottom right" />
+    <notifications group="notifications-bottom-left" position="bottom left" />
+    <notifications group="notifications-bottom-center" position="bottom center" />
+    <router-view />
+  </div>
 </template>
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
-  opacity: 0;
-}
-</style>
-<script>
-import HomologBanner from "./components/HomologBanner.vue";
 
+<style src="./style.scss" lang="scss"></style>
+
+<script>
 export default {
-  name: "App",
-  components: {
-    HomologBanner
+  name: "app",
+  metaInfo: {
+    title: "Index",
+    titleTemplate: "%s - AliançaDEV"
+  },
+  updated() {
+    // Remove loading state
+    setTimeout(() => document.body.classList.remove("app-loading"), 1);
   }
 };
 </script>
